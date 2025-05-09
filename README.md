@@ -1,100 +1,101 @@
-📌 Visão Geral
+## ✈ Web App de Gerenciamento de Projetos
 
-Este aplicativo web, desenvolvido com Flask, oferece uma solução simples e eficiente para organizar projetos e tarefas. Os usuários podem criar, editar e excluir projetos, além de gerenciar tarefas vinculadas a cada projeto com diferentes status. Os dados são persistidos localmente em arquivos CSV, e a interface é construída com HTML + Tailwind CSS para garantir responsividade e usabilidade.
+- ### Descrição do Projeto:
 
-⚙ Funcionalidades Disponíveis
-
-📁 Projetos
-
-Criar Projetos: Insira nome, descrição e data de criação.
-
-Visualizar Projetos: Veja todos os projetos cadastrados.
-
-Editar Projetos: Altere as informações de projetos existentes.
-
-Excluir Projetos: Remove o projeto e todas as suas tarefas vinculadas.
-
-✅ Tarefas
-
-Adicionar Tarefas: Crie tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
-
-Editar Tarefas: Atualize os dados das tarefas conforme necessário.
-
-Excluir Tarefas: Remova tarefas específicas de um projeto.
-
-Visualizar Tarefas: Veja as tarefas associadas a um projeto.
-
-Filtrar por Status: Exiba tarefas com base em seu status atual.
+Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que                 os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind      CSS para uma interface amigável e responsiva.
 
 
-### 📀 Armazenamento
+ ### 🛴 Funcionalidades Implementadas:
 
-O sistema utiliza exclusivamente arquivos CSV (projetos.csv e tarefas.csv) para guardar os dados.
+- ### Cadastrar Projetos:
 
-### 🧰 Requisitos Técnicos
+Crie projetos com nome, descrição e data de criação.
 
-Backend: Python (Flask)
+- ### Listar Projetos:
 
-Frontend: HTML com Tailwind CSS (via CDN)
+Visualize todos os projetos em uma lista.
 
-Banco de Dados: Arquivos CSV
+- ### Editar Projetos:
 
-Organização de Rotas: Padrão RESTful
+Altere nome e descrição de projetos existentes.
 
-### 📁 Estrutura de Pastas
+- ### Remover Projetos:
+
+Exclua projetos (remove também as tarefas associadas).
+
+- ### Adicionar Tarefas aos Projetos:
+
+Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
+
+- ### Editar e Remover Tarefas:
+
+Modifique ou exclua tarefas.
+
+- ### Visualizar Tarefas de um Projeto:
+
+Veja todas as tarefas de um projeto específico.
+
+- ### Armazenamento:
+ O projeto utiliza apenas CSV para armazenamento.
+ 
+
+ ### 🚤 Requisitos Técnicos:
+
+Backend: Flask (Python) Frontend:
+
+HTML com Tailwind CSS (via CDN)
+
+Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) 
+
+Rotas: Organizadas de forma RESTful
+
+
+## 🚗 Estrutura do Projeto:
 
 gerenciador_projetos/
 │
-├── static/                   # Arquivos estáticos (CSS, imagens etc.)
-├── templates/                # Templates HTML para as páginas
-│   ├── base.html
-│   ├── index.html
-│   ├── projeto.html
-│   ├── nova_tarefa.html
-│   ├── editar_projeto.html
-│   └── editar_tarefa.html
-├── projetos.csv              # Dados dos projetos
-├── tarefas.csv               # Dados das tarefas
-├── app.py                    # Código principal da aplicação Flask
-└── README.md                 # Documentação do projeto
-
-### 🚀 Como Executar o Projeto
-
-''' git clone <URL_DO_REPOSITORIO>
-cd gerenciador_projetos '''
-
-'''
-(Opcional) Crie um ambiente virtual:
-
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-'''
-Instale o Flask:
-'
-pip install flask
-
-Execute a aplicação:
-
-python app.py
-'
-Acesse no navegador:http://127.0.0.1:5000/
-
-### 🧪 Exemplos de Uso
-
-Tela InicialVeja a lista de projetos, com opções para editar ou excluir cada um.
-
-Visualização de ProjetosClique em um projeto para ver e gerenciar suas tarefas.
-
-Adicionar TarefaUse o botão “Nova Tarefa” para incluir uma nova atividade.
-
-Filtrar TarefasSelecione o status para filtrar tarefas (por exemplo, só as "Concluídas").
-
-Editar e ExcluirAtualize ou remova tarefas conforme a necessidade.
-
-Acompanhamento VisualBarra de progresso mostra a porcentagem de tarefas finalizadas no projeto.
+├── static/                 # Arquivos estáticos (CSS, JS, imagens, etc.) - vazio neste projeto
+├── templates/              # Templates HTML
+│   ├── base.html           # Template base
+│   ├── index.html          # Página inicial (lista de projetos)
+│   ├── projeto.html        # Página de detalhes de um projeto
+│   ├── nova_tarefa.html    # Formulário para nova tarefa
+│   ├── editar_projeto.html # Formulário para editar projeto
+│   └── editar_tarefa.html  # Formulário para editar tarefa
+├── projetos.csv            # Arquivo CSV para armazenar projetos
+├── tarefas.csv             # Arquivo CSV para armazenar tarefas
+├── [app.py](http://app.py/)                  # Código principal do Flask
+└── [README.md](http://readme.md/)               # Documentação do projeto
 
 
+
+## 🚅Instruções de Instalação e Execução:
+
+Clone o repositório: git clone <URL_DO_REPOSITORIO> cd gerenciador_projetos
+
+Crie e ative um ambiente virtual (opcional, mas recomendado): python -m venv venv source venv/bin/activate
+
+Instale as dependências: pip install flask
+
+Execute o projeto: python [app.py](http://app.py/)
+
+Acesse o sistema: Abra o navegador e acesse http://127.0.0.1:5000/.
+
+## 🚒Exemplos de Uso:
+
+- 1- Listar e Criar Projetos
+
+Acesse a página inicial (/) para ver a lista de projetos. Use os botões "Editar" e "Excluir" para gerenciar projetos.
+
+- 2- Gerenciar Tarefas
+
+Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adicionar tarefas. Filtre tarefas por status usando o menu suspenso. Edite ou exclua tarefas conforme necessário.
+
+- 3- Barra de Progresso
+
+Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
+
+## 🌍Imagens Do Funcionamento Do Projeto
 ## 🌍Imagens Do Funcionamento Do Projeto
 
 -Página Inicial:
