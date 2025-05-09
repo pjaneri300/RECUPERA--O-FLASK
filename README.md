@@ -44,13 +44,11 @@ Filtre tarefas por status dentro de um projeto.
 Exiba o progresso do projeto com base nas tarefas concluídas.
 
 
-
-
 - ### Migração para MySQL:
 
  O projeto utiliza apenas CSV para armazenamento.
 
-- ### Requisitos Técnicos:
+ ### 🚤 Requisitos Técnicos:
 
 Backend: Flask (Python) Frontend:
 
