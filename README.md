@@ -1,10 +1,10 @@
 ## ✈ Web App de Gerenciamento de Projetos
 
-- Descrição do Projeto:
+- ### Descrição do Projeto:
 
 Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que                 os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind      CSS para uma interface amigável e responsiva.
 
-- Funcionalidades Implementadas:
+- ### 🛴Funcionalidades Implementadas:
 
 ### Cadastrar Projetos:
 
