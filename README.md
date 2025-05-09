@@ -1,8 +1,9 @@
-✈ Sistema Web para Gerenciamento de Projetos
-📌 Visão Geral
+## ✈ Sistema Web para Gerenciamento de Projetos
+### 📌 Visão Geral
+
 Este aplicativo web, desenvolvido com Flask, oferece uma solução simples e eficiente para organizar projetos e tarefas. Os usuários podem criar, editar e excluir projetos, além de gerenciar tarefas vinculadas a cada projeto com diferentes status. Os dados são persistidos localmente em arquivos CSV, e a interface é construída com HTML + Tailwind CSS para garantir responsividade e usabilidade.
 
-⚙ Funcionalidades Disponíveis
+### ⚙ Funcionalidades Disponíveis
 📁 Projetos
 Criar Projetos: Insira nome, descrição e data de criação.
 
@@ -12,7 +13,7 @@ Editar Projetos: Altere as informações de projetos existentes.
 
 Excluir Projetos: Remove o projeto e todas as suas tarefas vinculadas.
 
-✅ Tarefas
+### ✅ Tarefas
 Adicionar Tarefas: Crie tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
 Editar Tarefas: Atualize os dados das tarefas conforme necessário.
@@ -23,13 +24,11 @@ Visualizar Tarefas: Veja as tarefas associadas a um projeto.
 
 Filtrar por Status: Exiba tarefas com base em seu status atual.
 
-📊 Barra de Progresso
-Cada projeto mostra uma barra que indica o percentual de tarefas concluídas.
 
-💾 Armazenamento
+### 💾 Armazenamento
 O sistema utiliza exclusivamente arquivos CSV (projetos.csv e tarefas.csv) para guardar os dados.
 
-🧰 Requisitos Técnicos
+### 🧰 Requisitos Técnicos
 Backend: Python (Flask)
 
 Frontend: HTML com Tailwind CSS (via CDN)
@@ -38,7 +37,7 @@ Banco de Dados: Arquivos CSV
 
 Organização de Rotas: Padrão RESTful
 
-📁 Estrutura de Pastas
+### 📁 Estrutura de Pastas
 csharp
 Copiar
 Editar
@@ -56,7 +55,8 @@ gerenciador_projetos/
 ├── tarefas.csv               # Dados das tarefas
 ├── app.py                    # Código principal da aplicação Flask
 └── README.md                 # Documentação do projeto
-🚀 Como Executar o Projeto
+
+### 🚀 Como Executar o Projeto
 Clone o repositório:
 
 bash
@@ -87,7 +87,7 @@ python app.py
 Acesse no navegador:
 http://127.0.0.1:5000/
 
-🧪 Exemplos de Uso
+### 🧪 Exemplos de Uso
 Página Inicial
 Veja a lista de projetos, com opções para editar ou excluir cada um.
 
