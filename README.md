@@ -59,10 +59,8 @@ gerenciador_projetos/
 └── README.md                 # Documentação do projeto
 
 ### 🚀 Como Executar o Projeto
-'
 git clone <URL_DO_REPOSITORIO>
 cd gerenciador_projetos
-'
 (Opcional) Crie um ambiente virtual:
 '
 python -m venv venv
