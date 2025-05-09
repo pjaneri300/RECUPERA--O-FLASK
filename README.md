@@ -26,15 +26,12 @@ Visualizar Tarefas: Veja as tarefas associadas a um projeto.
 
 Filtrar por Status: Exiba tarefas com base em seu status atual.
 
-📈 Barra de Progresso
 
-Cada projeto mostra uma barra que indica o percentual de tarefas concluídas.
-
-📀 Armazenamento
+### 📀 Armazenamento
 
 O sistema utiliza exclusivamente arquivos CSV (projetos.csv e tarefas.csv) para guardar os dados.
 
-🧰 Requisitos Técnicos
+### 🧰 Requisitos Técnicos
 
 Backend: Python (Flask)
 
@@ -44,7 +41,7 @@ Banco de Dados: Arquivos CSV
 
 Organização de Rotas: Padrão RESTful
 
-📁 Estrutura de Pastas
+### 📁 Estrutura de Pastas
 
 gerenciador_projetos/
 │
@@ -61,28 +58,28 @@ gerenciador_projetos/
 ├── app.py                    # Código principal da aplicação Flask
 └── README.md                 # Documentação do projeto
 
-🚀 Como Executar o Projeto
-
+### 🚀 Como Executar o Projeto
+'''
 git clone <URL_DO_REPOSITORIO>
 cd gerenciador_projetos
-
+'''
 (Opcional) Crie um ambiente virtual:
-
+'''
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-
+'''
 Instale o Flask:
-
+'''
 pip install flask
 
 Execute a aplicação:
 
 python app.py
-
+'''
 Acesse no navegador:http://127.0.0.1:5000/
 
-🧪 Exemplos de Uso
+### 🧪 Exemplos de Uso
 
 Tela InicialVeja a lista de projetos, com opções para editar ou excluir cada um.
 
