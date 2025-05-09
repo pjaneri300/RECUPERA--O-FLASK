@@ -35,17 +35,13 @@ Modifique ou exclua tarefas.
 
 Veja todas as tarefas de um projeto específico.
 
-- ### Filtro por Status das Tarefas:
-
-Filtre tarefas por status dentro de um projeto.
-
 - ### Barra de Progresso do Projeto:
 
 Exiba o progresso do projeto com base nas tarefas concluídas.
 
-
 - ### Armazenamento:
  O projeto utiliza apenas CSV para armazenamento.
+ 
 
  ### 🚤 Requisitos Técnicos:
 
@@ -56,6 +52,7 @@ HTML com Tailwind CSS (via CDN)
 Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) 
 
 Rotas: Organizadas de forma RESTful
+
 
 ## 🚗 Estrutura do Projeto:
 
@@ -77,9 +74,6 @@ gerenciador_projetos/
 
 ```
 
-## 🛹 Pré requisitos:
-
-Python 3.8 ou superior Flask (pip install flask)
 
 ## 🚅Instruções de Instalação e Execução:
 
