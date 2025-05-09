@@ -26,10 +26,6 @@ Barra de Progresso do Projeto: Exiba o progresso do projeto com base nas tarefas
 
 Funcionalidades Não Implementadas (Extras)
 
-- Upload de Imagem por Projeto:
-
-Não implementado
-
 - Migração para MySQL:
 
  O projeto utiliza apenas CSV para armazenamento.
@@ -58,34 +54,37 @@ gerenciador_projetos/
 
 ```
 
-Pré-requisitos:
+## 🛹 Pré requisitos:
 
 Python 3.8 ou superior Flask (pip install flask)
 
-- Instruções de Instalação e Execução:
-- Clone o repositório: git clone <URL_DO_REPOSITORIO> cd gerenciador_projetos
-- Crie e ative um ambiente virtual (opcional, mas recomendado): python -m venv venv source venv/bin/activate # Linux/Mac venv\Scripts\activate # Windows
-- Instale as dependências: pip install flask
-- Execute o projeto: python [app.py](http://app.py/)
-- Acesse o sistema: Abra o navegador e acesse http://127.0.0.1:5000/.
-- Exemplos de Uso:
-- 1. Listar e Criar Projetos
+## 🚅Instruções de Instalação e Execução:
+
+Clone o repositório: git clone <URL_DO_REPOSITORIO> cd gerenciador_projetos
+
+Crie e ative um ambiente virtual (opcional, mas recomendado): python -m venv venv source venv/bin/activate # Linux/Mac venv\Scripts\activate # Windows
+
+Instale as dependências: pip install flask
+
+Execute o projeto: python [app.py](http://app.py/)
+
+Acesse o sistema: Abra o navegador e acesse http://127.0.0.1:5000/.
+
+## 🚒Exemplos de Uso:
+
+- 1- Listar e Criar Projetos
 
 Acesse a página inicial (/) para ver a lista de projetos. Use os botões "Editar" e "Excluir" para gerenciar projetos.
 
-- 2. Gerenciar Tarefas
+- 2- Gerenciar Tarefas
 
 Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adicionar tarefas. Filtre tarefas por status usando o menu suspenso. Edite ou exclua tarefas conforme necessário.
 
-- 3. Barra de Progresso
+- 3- Barra de Progresso
 
 Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
 
-- Arquivos CSV de Exemplo:
-- projetos.csv: id,nome,descricao,data_criacao 1,Projeto Exemplo,Um projeto de exemplo para demonstração,2025-05-09
-- tarefas.csv: id,projeto_id,nome,descricao,status 1,1,Tarefa Exemplo,Descrição da tarefa exemplo,Pendente 2,1,Tarefa 2,Segunda tarefa do projeto,Concluída
-
--IMAGENS DO FUNCIONAMENTO DO PROJETO
+##🌍Imagens Do Funcionamento Do Projeto
 
 -Página Inicial:
 
