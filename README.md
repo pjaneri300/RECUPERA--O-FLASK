@@ -1,43 +1,44 @@
-# Projeto-Flask
+## ✈ Web App de Gerenciamento de Projetos
 
--
-Web App de Gerenciamento de Projetos
+- Descrição do Projeto:
 
--Descrição do Projeto:
-Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind CSS para uma interface amigável e responsiva.
+Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que                 os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind      CSS para uma interface amigável e responsiva.
 
--Funcionalidades Implementadas:
+- Funcionalidades Implementadas:
 
--Cadastrar Projetos: Crie projetos com nome, descrição e data de criação.
+Cadastrar Projetos: Crie projetos com nome, descrição e data de criação.
 
--Listar Projetos: Visualize todos os projetos em uma lista.
+Listar Projetos: Visualize todos os projetos em uma lista.
 
--Editar Projetos: Altere nome e descrição de projetos existentes.
+Editar Projetos: Altere nome e descrição de projetos existentes.
 
--Remover Projetos: Exclua projetos (remove também as tarefas associadas).
+Remover Projetos: Exclua projetos (remove também as tarefas associadas).
 
--Adicionar Tarefas aos Projetos: Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
+Adicionar Tarefas aos Projetos: Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
--Editar e Remover Tarefas: Modifique ou exclua tarefas.
+Editar e Remover Tarefas: Modifique ou exclua tarefas.
 
--Visualizar Tarefas de um Projeto: Veja todas as tarefas de um projeto específico.
+Visualizar Tarefas de um Projeto: Veja todas as tarefas de um projeto específico.
 
--Filtro por Status das Tarefas: Filtre tarefas por status dentro de um projeto.
+Filtro por Status das Tarefas: Filtre tarefas por status dentro de um projeto.
 
--Barra de Progresso do Projeto: Exiba o progresso do projeto com base nas tarefas concluídas.
+Barra de Progresso do Projeto: Exiba o progresso do projeto com base nas tarefas concluídas.
 
--Funcionalidades Não Implementadas (Extras)
+Funcionalidades Não Implementadas (Extras)
 
--Upload de Imagem por Projeto: Não implementado.
--Migração para MySQL: O projeto utiliza apenas CSV para armazenamento.
+- Upload de Imagem por Projeto:
 
--Requisitos Técnicos:
-Backend: Flask (Python)
-Frontend: HTML com Tailwind CSS (via CDN)
-Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv)
-Rotas: Organizadas de forma RESTful
+Não implementado
 
-Estrutura do Projeto:
+- Migração para MySQL:
+
+ O projeto utiliza apenas CSV para armazenamento.
+
+- Requisitos Técnicos:
+
+Backend: Flask (Python) Frontend: HTML com Tailwind CSS (via CDN) Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) Rotas: Organizadas de forma RESTful
+
+## 🚗 Estrutura do Projeto:
 
 ```
 gerenciador_projetos/
@@ -54,61 +55,35 @@ gerenciador_projetos/
 ├── tarefas.csv             # Arquivo CSV para armazenar tarefas
 ├── [app.py](http://app.py/)                  # Código principal do Flask
 └── [README.md](http://readme.md/)               # Documentação do projeto
+
 ```
 
 Pré-requisitos:
 
-Python 3.8 ou superior
-Flask (pip install flask)
+Python 3.8 ou superior Flask (pip install flask)
 
--Instruções de Instalação e Execução:
+- Instruções de Instalação e Execução:
+- Clone o repositório: git clone <URL_DO_REPOSITORIO> cd gerenciador_projetos
+- Crie e ative um ambiente virtual (opcional, mas recomendado): python -m venv venv source venv/bin/activate # Linux/Mac venv\Scripts\activate # Windows
+- Instale as dependências: pip install flask
+- Execute o projeto: python [app.py](http://app.py/)
+- Acesse o sistema: Abra o navegador e acesse http://127.0.0.1:5000/.
+- Exemplos de Uso:
+- 1. Listar e Criar Projetos
 
--Clone o repositório:
-git clone <URL_DO_REPOSITORIO>
-cd gerenciador_projetos
+Acesse a página inicial (/) para ver a lista de projetos. Use os botões "Editar" e "Excluir" para gerenciar projetos.
 
--Crie e ative um ambiente virtual (opcional, mas recomendado):
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+- 2. Gerenciar Tarefas
 
--Instale as dependências:
-pip install flask
+Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adicionar tarefas. Filtre tarefas por status usando o menu suspenso. Edite ou exclua tarefas conforme necessário.
 
--Execute o projeto:
-python [app.py](http://app.py/)
-
--Acesse o sistema:
-Abra o navegador e acesse http://127.0.0.1:5000/.
-
--Exemplos de Uso:
-
--1. Listar e Criar Projetos
-
-Acesse a página inicial (/) para ver a lista de projetos.
-Use os botões "Editar" e "Excluir" para gerenciar projetos.
-
--2. Gerenciar Tarefas
-
-Clique em um projeto para ver suas tarefas.
-Use o botão "Nova Tarefa" para adicionar tarefas.
-Filtre tarefas por status usando o menu suspenso.
-Edite ou exclua tarefas conforme necessário.
-
--3. Barra de Progresso
+- 3. Barra de Progresso
 
 Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
 
--Arquivos CSV de Exemplo:
-
--projetos.csv:
-id,nome,descricao,data_criacao
-1,Projeto Exemplo,Um projeto de exemplo para demonstração,2025-05-09
-
--tarefas.csv:
-id,projeto_id,nome,descricao,status
-1,1,Tarefa Exemplo,Descrição da tarefa exemplo,Pendente
-2,1,Tarefa 2,Segunda tarefa do projeto,Concluída
+- Arquivos CSV de Exemplo:
+- projetos.csv: id,nome,descricao,data_criacao 1,Projeto Exemplo,Um projeto de exemplo para demonstração,2025-05-09
+- tarefas.csv: id,projeto_id,nome,descricao,status 1,1,Tarefa Exemplo,Descrição da tarefa exemplo,Pendente 2,1,Tarefa 2,Segunda tarefa do projeto,Concluída
 
 -IMAGENS DO FUNCIONAMENTO DO PROJETO
 
