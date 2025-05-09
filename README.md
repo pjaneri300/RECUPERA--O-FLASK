@@ -59,24 +59,24 @@ gerenciador_projetos/
 └── README.md                 # Documentação do projeto
 
 ### 🚀 Como Executar o Projeto
-'''
+'
 git clone <URL_DO_REPOSITORIO>
 cd gerenciador_projetos
-'''
+'
 (Opcional) Crie um ambiente virtual:
-'''
+'
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
-'''
+'
 Instale o Flask:
-'''
+'
 pip install flask
 
 Execute a aplicação:
 
 python app.py
-'''
+'
 Acesse no navegador:http://127.0.0.1:5000/
 
 ### 🧪 Exemplos de Uso
