@@ -4,43 +4,43 @@
 
 Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que                 os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind      CSS para uma interface amigável e responsiva.
 
-- ### Funcionalidades Implementadas:
+ ### 🛴 Funcionalidades Implementadas:
 
 - ### Cadastrar Projetos:
 
--Crie projetos com nome, descrição e data de criação.
+Crie projetos com nome, descrição e data de criação.
 
 - ### Listar Projetos:
 
--Visualize todos os projetos em uma lista.
+Visualize todos os projetos em uma lista.
 
 - ### Editar Projetos:
 
--Altere nome e descrição de projetos existentes.
+Altere nome e descrição de projetos existentes.
 
 - ### Remover Projetos:
 
--Exclua projetos (remove também as tarefas associadas).
+Exclua projetos (remove também as tarefas associadas).
 
 - ### Adicionar Tarefas aos Projetos:
 
--Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
+Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
 - ### Editar e Remover Tarefas:
 
--Modifique ou exclua tarefas.
+Modifique ou exclua tarefas.
 
 - ### Visualizar Tarefas de um Projeto:
 
--Veja todas as tarefas de um projeto específico.
+Veja todas as tarefas de um projeto específico.
 
 - ### Filtro por Status das Tarefas:
 
--Filtre tarefas por status dentro de um projeto.
+Filtre tarefas por status dentro de um projeto.
 
 - ### Barra de Progresso do Projeto:
 
--Exiba o progresso do projeto com base nas tarefas concluídas.
+Exiba o progresso do projeto com base nas tarefas concluídas.
 
 
 - ### Migração para MySQL:
