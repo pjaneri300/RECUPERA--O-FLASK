@@ -6,39 +6,39 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele 
 
 - Funcionalidades Implementadas:
 
-Cadastrar Projetos:
+### Cadastrar Projetos:
 
 -Crie projetos com nome, descrição e data de criação.
 
-Listar Projetos:
+### Listar Projetos:
 
 -Visualize todos os projetos em uma lista.
 
-Editar Projetos:
+### Editar Projetos:
 
 -Altere nome e descrição de projetos existentes.
 
-Remover Projetos:
+### Remover Projetos:
 
 -Exclua projetos (remove também as tarefas associadas).
 
-Adicionar Tarefas aos Projetos:
+### Adicionar Tarefas aos Projetos:
 
 -Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
-Editar e Remover Tarefas:
+### Editar e Remover Tarefas:
 
 -Modifique ou exclua tarefas.
 
-Visualizar Tarefas de um Projeto:
+### Visualizar Tarefas de um Projeto:
 
 -Veja todas as tarefas de um projeto específico.
 
-Filtro por Status das Tarefas:
+### Filtro por Status das Tarefas:
 
 -Filtre tarefas por status dentro de um projeto.
 
-Barra de Progresso do Projeto:
+### Barra de Progresso do Projeto:
 
 -Exiba o progresso do projeto com base nas tarefas concluídas.
 
@@ -50,8 +50,11 @@ Barra de Progresso do Projeto:
 - Requisitos Técnicos:
 
 Backend: Flask (Python) Frontend:
+
 HTML com Tailwind CSS (via CDN)
+
 Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) 
+
 Rotas: Organizadas de forma RESTful
 
 ## 🚗 Estrutura do Projeto:
