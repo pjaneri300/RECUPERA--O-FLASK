@@ -1,101 +1,108 @@
-## ✈ Web App de Gerenciamento de Projetos
+✈ Sistema Web para Gerenciamento de Projetos
+📌 Visão Geral
+Este aplicativo web, desenvolvido com Flask, oferece uma solução simples e eficiente para organizar projetos e tarefas. Os usuários podem criar, editar e excluir projetos, além de gerenciar tarefas vinculadas a cada projeto com diferentes status. Os dados são persistidos localmente em arquivos CSV, e a interface é construída com HTML + Tailwind CSS para garantir responsividade e usabilidade.
 
-- ### Descrição do Projeto:
+⚙ Funcionalidades Disponíveis
+📁 Projetos
+Criar Projetos: Insira nome, descrição e data de criação.
 
-Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que                 os usuários criem, editem e removam projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, removidas e filtradas por status. Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind      CSS para uma interface amigável e responsiva.
+Visualizar Projetos: Veja todos os projetos cadastrados.
 
+Editar Projetos: Altere as informações de projetos existentes.
 
- ### 🛴 Funcionalidades Implementadas:
+Excluir Projetos: Remove o projeto e todas as suas tarefas vinculadas.
 
-- ### Cadastrar Projetos:
+✅ Tarefas
+Adicionar Tarefas: Crie tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
-Crie projetos com nome, descrição e data de criação.
+Editar Tarefas: Atualize os dados das tarefas conforme necessário.
 
-- ### Listar Projetos:
+Excluir Tarefas: Remova tarefas específicas de um projeto.
 
-Visualize todos os projetos em uma lista.
+Visualizar Tarefas: Veja as tarefas associadas a um projeto.
 
-- ### Editar Projetos:
+Filtrar por Status: Exiba tarefas com base em seu status atual.
 
-Altere nome e descrição de projetos existentes.
+📊 Barra de Progresso
+Cada projeto mostra uma barra que indica o percentual de tarefas concluídas.
 
-- ### Remover Projetos:
+💾 Armazenamento
+O sistema utiliza exclusivamente arquivos CSV (projetos.csv e tarefas.csv) para guardar os dados.
 
-Exclua projetos (remove também as tarefas associadas).
+🧰 Requisitos Técnicos
+Backend: Python (Flask)
 
-- ### Adicionar Tarefas aos Projetos:
+Frontend: HTML com Tailwind CSS (via CDN)
 
-Adicione tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
+Banco de Dados: Arquivos CSV
 
-- ### Editar e Remover Tarefas:
+Organização de Rotas: Padrão RESTful
 
-Modifique ou exclua tarefas.
-
-- ### Visualizar Tarefas de um Projeto:
-
-Veja todas as tarefas de um projeto específico.
-
-- ### Armazenamento:
- O projeto utiliza apenas CSV para armazenamento.
- 
-
- ### 🚤 Requisitos Técnicos:
-
-Backend: Flask (Python) Frontend:
-
-HTML com Tailwind CSS (via CDN)
-
-Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) 
-
-Rotas: Organizadas de forma RESTful
-
-
-## 🚗 Estrutura do Projeto:
-
-```
+📁 Estrutura de Pastas
+csharp
+Copiar
+Editar
 gerenciador_projetos/
 │
-├── static/                 # Arquivos estáticos (CSS, JS, imagens, etc.) - vazio neste projeto
-├── templates/              # Templates HTML
-│   ├── base.html           # Template base
-│   ├── index.html          # Página inicial (lista de projetos)
-│   ├── projeto.html        # Página de detalhes de um projeto
-│   ├── nova_tarefa.html    # Formulário para nova tarefa
-│   ├── editar_projeto.html # Formulário para editar projeto
-│   └── editar_tarefa.html  # Formulário para editar tarefa
-├── projetos.csv            # Arquivo CSV para armazenar projetos
-├── tarefas.csv             # Arquivo CSV para armazenar tarefas
-├── [app.py](http://app.py/)                  # Código principal do Flask
-└── [README.md](http://readme.md/)               # Documentação do projeto
+├── static/                   # Arquivos estáticos (CSS, imagens etc.)
+├── templates/                # Templates HTML para as páginas
+│   ├── base.html
+│   ├── index.html
+│   ├── projeto.html
+│   ├── nova_tarefa.html
+│   ├── editar_projeto.html
+│   └── editar_tarefa.html
+├── projetos.csv              # Dados dos projetos
+├── tarefas.csv               # Dados das tarefas
+├── app.py                    # Código principal da aplicação Flask
+└── README.md                 # Documentação do projeto
+🚀 Como Executar o Projeto
+Clone o repositório:
 
-```
+bash
+Copiar
+Editar
+git clone <URL_DO_REPOSITORIO>
+cd gerenciador_projetos
+(Opcional) Crie um ambiente virtual:
 
+bash
+Copiar
+Editar
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+Instale o Flask:
 
-## 🚅Instruções de Instalação e Execução:
+bash
+Copiar
+Editar
+pip install flask
+Execute a aplicação:
 
-Clone o repositório: git clone <URL_DO_REPOSITORIO> cd gerenciador_projetos
+bash
+Copiar
+Editar
+python app.py
+Acesse no navegador:
+http://127.0.0.1:5000/
 
-Crie e ative um ambiente virtual (opcional, mas recomendado): python -m venv venv source venv/bin/activate
+🧪 Exemplos de Uso
+Página Inicial
+Veja a lista de projetos, com opções para editar ou excluir cada um.
 
-Instale as dependências: pip install flask
+Visualização de Projetos
+Clique em um projeto para ver e gerenciar suas tarefas.
 
-Execute o projeto: python [app.py](http://app.py/)
+Adicionar Tarefa
+Use o botão “Nova Tarefa” para incluir uma nova atividade.
 
-Acesse o sistema: Abra o navegador e acesse http://127.0.0.1:5000/.
+Filtrar Tarefas
+Selecione o status para filtrar tarefas (por exemplo, só as "Concluídas").
 
-## 🚒Exemplos de Uso:
+Editar e Excluir
+Atualize ou remova tarefas conforme a necessidade.
 
-- 1- Listar e Criar Projetos
-
-Acesse a página inicial (/) para ver a lista de projetos. Use os botões "Editar" e "Excluir" para gerenciar projetos.
-
-- 2- Gerenciar Tarefas
-
-Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adicionar tarefas. Filtre tarefas por status usando o menu suspenso. Edite ou exclua tarefas conforme necessário.
-
-- 3- Barra de Progresso
-
-Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
 
 ## 🌍Imagens Do Funcionamento Do Projeto
 
