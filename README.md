@@ -35,10 +35,6 @@ Modifique ou exclua tarefas.
 
 Veja todas as tarefas de um projeto específico.
 
-- ### Barra de Progresso do Projeto:
-
-Exiba o progresso do projeto com base nas tarefas concluídas.
-
 - ### Armazenamento:
  O projeto utiliza apenas CSV para armazenamento.
  
