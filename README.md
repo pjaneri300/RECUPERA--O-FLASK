@@ -114,28 +114,28 @@ id,projeto_id,nome,descricao,status
 
 -Página Inicial:
 
-![1.png](attachment:3d055cb4-6b9f-46fc-8d18-4263a24d7b1c:1.png)
+![1.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/1.png)
 
 -Páginas das tarefas:
 
-![6.png](attachment:7131c113-cfbe-46b1-ae09-d1c9488f34ad:6.png)
+![6.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/2.png)
 
 -Páginas para criar novas tarefas:
 
-![2.png](attachment:e0c41638-8a62-4121-98b7-00fa2550c8a8:2.png)
+![2.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/3.png)
 
 -Página com as novas tarefas:
 
-![3.png](attachment:59025daf-fe41-4c34-adf7-6bbabd755536:3.png)
+![3.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/4.png)
 
 -Página para editar as tarefas existentes:
 
-![Captura de tela 2025-05-09 085643.png](attachment:02b901c3-a4d8-45b4-848e-1c0aba3a2cdb:Captura_de_tela_2025-05-09_085643.png)
+![Captura de tela 2025-05-09 085643.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/5.png)
 
 -Página com a tarefa editada:
 
-![Captura de tela 2025-05-09 085741.png](attachment:e4709b0a-9486-4de0-95a3-d5297d3a7872:Captura_de_tela_2025-05-09_085741.png)
+![Captura de tela 2025-05-09 085741.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/6.png)
 
 -Página com a tarefa excluida:
 
-![6.png](attachment:8f5b1997-ddc2-4336-b675-48c8fb4c60fb:6.png)
+![6.png](https://github.com/pjaneri300/RECUPERA--O-FLASK/blob/main/static/img/7.png)
