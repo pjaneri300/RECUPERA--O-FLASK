@@ -32,7 +32,10 @@ Funcionalidades Não Implementadas (Extras)
 
 - Requisitos Técnicos:
 
-Backend: Flask (Python) Frontend: HTML com Tailwind CSS (via CDN) Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) Rotas: Organizadas de forma RESTful
+Backend: Flask (Python) Frontend:
+HTML com Tailwind CSS (via CDN)
+Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv) 
+Rotas: Organizadas de forma RESTful
 
 ## 🚗 Estrutura do Projeto:
 
@@ -84,7 +87,7 @@ Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adic
 
 Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
 
-##🌍Imagens Do Funcionamento Do Projeto
+🌍Imagens Do Funcionamento Do Projeto
 
 -Página Inicial:
 
