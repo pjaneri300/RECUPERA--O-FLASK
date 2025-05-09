@@ -91,11 +91,6 @@ Acesse a página inicial (/) para ver a lista de projetos. Use os botões "Edita
 
 Clique em um projeto para ver suas tarefas. Use o botão "Nova Tarefa" para adicionar tarefas. Filtre tarefas por status usando o menu suspenso. Edite ou exclua tarefas conforme necessário.
 
-- 3- Barra de Progresso
-
-Na página inicial, cada projeto exibe uma barra de progresso baseada na porcentagem de tarefas concluídas.
-
-## 🌍Imagens Do Funcionamento Do Projeto
 ## 🌍Imagens Do Funcionamento Do Projeto
 
 -Página Inicial:
