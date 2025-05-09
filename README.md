@@ -1,10 +1,11 @@
-## ✈ Sistema Web para Gerenciamento de Projetos
-### 📌 Visão Geral
+📌 Visão Geral
 
 Este aplicativo web, desenvolvido com Flask, oferece uma solução simples e eficiente para organizar projetos e tarefas. Os usuários podem criar, editar e excluir projetos, além de gerenciar tarefas vinculadas a cada projeto com diferentes status. Os dados são persistidos localmente em arquivos CSV, e a interface é construída com HTML + Tailwind CSS para garantir responsividade e usabilidade.
 
-### ⚙ Funcionalidades Disponíveis
+⚙ Funcionalidades Disponíveis
+
 📁 Projetos
+
 Criar Projetos: Insira nome, descrição e data de criação.
 
 Visualizar Projetos: Veja todos os projetos cadastrados.
@@ -13,7 +14,8 @@ Editar Projetos: Altere as informações de projetos existentes.
 
 Excluir Projetos: Remove o projeto e todas as suas tarefas vinculadas.
 
-### ✅ Tarefas
+✅ Tarefas
+
 Adicionar Tarefas: Crie tarefas com título, descrição e status (Pendente, Em andamento, Concluída).
 
 Editar Tarefas: Atualize os dados das tarefas conforme necessário.
@@ -24,11 +26,16 @@ Visualizar Tarefas: Veja as tarefas associadas a um projeto.
 
 Filtrar por Status: Exiba tarefas com base em seu status atual.
 
+📈 Barra de Progresso
 
-### 💾 Armazenamento
+Cada projeto mostra uma barra que indica o percentual de tarefas concluídas.
+
+📀 Armazenamento
+
 O sistema utiliza exclusivamente arquivos CSV (projetos.csv e tarefas.csv) para guardar os dados.
 
-### 🧰 Requisitos Técnicos
+🧰 Requisitos Técnicos
+
 Backend: Python (Flask)
 
 Frontend: HTML com Tailwind CSS (via CDN)
@@ -37,10 +44,8 @@ Banco de Dados: Arquivos CSV
 
 Organização de Rotas: Padrão RESTful
 
-### 📁 Estrutura de Pastas
-csharp
-Copiar
-Editar
+📁 Estrutura de Pastas
+
 gerenciador_projetos/
 │
 ├── static/                   # Arquivos estáticos (CSS, imagens etc.)
@@ -56,52 +61,40 @@ gerenciador_projetos/
 ├── app.py                    # Código principal da aplicação Flask
 └── README.md                 # Documentação do projeto
 
-### 🚀 Como Executar o Projeto
-Clone o repositório:
+🚀 Como Executar o Projeto
 
-''' bash
-Copiar
-Editar
 git clone <URL_DO_REPOSITORIO>
 cd gerenciador_projetos
+
 (Opcional) Crie um ambiente virtual:
 
-''' bash
-Copiar
-Editar
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
+
 Instale o Flask:
 
-''' bash
-Copiar
-Editar
 pip install flask
+
 Execute a aplicação:
 
-''' bash
-Copiar
-Editar
 python app.py
-Acesse no navegador:
-http://127.0.0.1:5000/
 
-### 🧪 Exemplos de Uso
-Página Inicial
-Veja a lista de projetos, com opções para editar ou excluir cada um.
+Acesse no navegador:http://127.0.0.1:5000/
 
-Visualização de Projetos
-Clique em um projeto para ver e gerenciar suas tarefas.
+🧪 Exemplos de Uso
 
-Adicionar Tarefa
-Use o botão “Nova Tarefa” para incluir uma nova atividade.
+Tela InicialVeja a lista de projetos, com opções para editar ou excluir cada um.
 
-Filtrar Tarefas
-Selecione o status para filtrar tarefas (por exemplo, só as "Concluídas").
+Visualização de ProjetosClique em um projeto para ver e gerenciar suas tarefas.
 
-Editar e Excluir
-Atualize ou remova tarefas conforme a necessidade.
+Adicionar TarefaUse o botão “Nova Tarefa” para incluir uma nova atividade.
+
+Filtrar TarefasSelecione o status para filtrar tarefas (por exemplo, só as "Concluídas").
+
+Editar e ExcluirAtualize ou remova tarefas conforme a necessidade.
+
+Acompanhamento VisualBarra de progresso mostra a porcentagem de tarefas finalizadas no projeto.
 
 
 ## 🌍Imagens Do Funcionamento Do Projeto
