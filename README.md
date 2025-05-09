@@ -59,14 +59,14 @@ gerenciador_projetos/
 ### 🚀 Como Executar o Projeto
 Clone o repositório:
 
-bash
+''' bash
 Copiar
 Editar
 git clone <URL_DO_REPOSITORIO>
 cd gerenciador_projetos
 (Opcional) Crie um ambiente virtual:
 
-bash
+''' bash
 Copiar
 Editar
 python -m venv venv
@@ -74,13 +74,13 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 Instale o Flask:
 
-bash
+''' bash
 Copiar
 Editar
 pip install flask
 Execute a aplicação:
 
-bash
+''' bash
 Copiar
 Editar
 python app.py
