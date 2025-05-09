@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ project.nome }}{% endblock %}
+
+{% block content %}
+    <h2 class="text-xl font-semibold mb-4">{{ project.nome }}</h2>
+    <p class="text-gray-600 mb-4">{{ project.descricao }}</p>
+    <a href="{{ url_for('nova_tarefa', projeto_id=project.id) }}" 
+       class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mb-4 inline-block">
+        Nova Tarefa
+    </a>
+    <h3 class="text-lg font-semibold mb-2">Tarefas</h3>
+    <ul class="space-y-2">
+        {% for task in tasks %}
+            <li class="bg-white p-4 rounded-lg shadow-md flex justify-between items-center">
+                <div>
+                    <h4 class="font-medium">{{ task.nome }}</h4>
+                    <p class="text-sm text-gray-500">Status: {{ task.status }}</p>
+                </div>
+                <div class="space-x-2">
+                    <a href="{{ url_for('editar_tarefa', tarefa_id=task.id) }}" 
+                       class="text-green-500 hover:underline">Editar</a>
+                    <form action="{{ url_for('excluir_tarefa', tarefa_id=task.id) }}" method="POST" 
+                          class="inline" onsubmit="return confirm('Tem certeza que deseja excluir esta tarefa?');">
+                        <button type="submit" 
+                                class="text-red-500 hover:underline">Excluir</button>
+                    </form>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
