@@ -43,11 +43,11 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele 
 -Exiba o progresso do projeto com base nas tarefas concluídas.
 
 
-- Migração para MySQL:
+- ### Migração para MySQL:
 
  O projeto utiliza apenas CSV para armazenamento.
 
-- Requisitos Técnicos:
+- ### Requisitos Técnicos:
 
 Backend: Flask (Python) Frontend:
 
