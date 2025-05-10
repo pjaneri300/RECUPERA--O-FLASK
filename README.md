@@ -33,20 +33,31 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com **Flask**. 
 
 ## 🚗 Estrutura do Projeto
 gerenciador_projetos/
+
 │
 ├── templates/              # Templates HTML
+
 │   ├── base.html           # Template base com layout comum
+
 │   ├── index.html          # Página inicial (lista de projetos)
+
 │   ├── projeto.html        # Página de detalhes de um projeto
+
 │   ├── nova_tarefa.html    # Formulário para nova tarefa
+
 │   ├── editar_projeto.html # Formulário para editar projeto
+
 │   └── editar_tarefa.html  # Formulário para editar tarefa
+
 ├── projetos.csv            # Arquivo CSV para armazenar projetos
+
 ├── tarefas.csv             # Arquivo CSV para armazenar tarefas
+
 ├── app.py                  # Código principal do Flask
+
 └── README.md               # Documentação do projeto
 
-Nota: A pasta static/ não é utilizada, pois o Tailwind CSS é carregado via CDN.
+
 
 ## 🚅 Instruções de Instalação e Execução
 
@@ -74,22 +85,22 @@ Acessar o Sistema:
 Abra o navegador e acesse http://127.0.0.1:5000/.
 
 
-🚒 Exemplos de Uso
+## 🚒 Exemplos de Uso
 
-Listar e Gerenciar Projetos:
+**Listar e Gerenciar Projetos:**
 
 Acesse a página inicial (/) para ver todos os projetos em um layout de cartões.
 Clique em "Ver Projeto" para visualizar detalhes e tarefas ou em "Editar" para modificar nome e descrição.
 
 
-Gerenciar Tarefas:
+**Gerenciar Tarefas:**
 
 Na página de um projeto, clique em "Nova Tarefa" para adicionar uma tarefa com nome e status.
 Edite ou exclua tarefas usando os links "Editar" e "Excluir" ao lado de cada tarefa.
 
 
 
-Observações
+**Observações**
 
 A interface utiliza um esquema de cores roxo e branco.
 Os arquivos CSV (projetos.csv e tarefas.csv) são criados automaticamente na primeira execução, se não existirem.
