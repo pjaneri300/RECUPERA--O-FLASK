@@ -1,24 +1,26 @@
 ## ✈ Gerenciador de Projetos
 
-**Descrição do projeto**
+**Descrição Do Projeto:**
+
 Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que os usuários criem, editem e visualizem projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, excluídas e categorizadas por status (Pendente, Em Andamento, Concluído). Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind CSS para uma interface moderna, responsiva e amigável.
-🛴 Funcionalidades Implementadas
 
-Cadastrar Projetos: Crie projetos com nome e descrição.
-Listar Projetos: Visualize todos os projetos em uma interface de cartões.
-Editar Projetos: Modifique nome e descrição de projetos existentes.
-Adicionar Tarefas aos Projetos: Adicione tarefas com nome e status.
-Editar e Remover Tarefas: Atualize ou exclua tarefas de um projeto.
-Visualizar Tarefas de um Projeto: Veja todas as tarefas associadas a um projeto específico.
-Armazenamento: Utiliza arquivos CSV para persistência de dados.
+## 🛴 Funcionalidades Implementadas
 
-Observação: A funcionalidade de remover projetos (e suas tarefas associadas) não está implementada no código atual.
-🚤 Requisitos Técnicos
+**Cadastrar Projetos:** Crie projetos com nome e descrição.
+**Listar Projetos:** Visualize todos os projetos em uma interface de cartões.
+**Editar Projetos:** Modifique nome e descrição de projetos existentes.
+**Adicionar Tarefas aos Projetos:** Adicione tarefas com nome e status.
+**Editar e Remover Tarefas:** Atualize ou exclua tarefas de um projeto.
+**Visualizar Tarefas de um Projeto:** Veja todas as tarefas associadas a um projeto específico.
+**Armazenamento:** Utiliza arquivos CSV para persistência de dados.
 
-Backend: Flask (framework Python)
-Frontend: HTML com Tailwind CSS (via CDN)
-Armazenamento: Arquivos CSV (projetos.csv e tarefas.csv)
-Rotas: Organizadas de forma simples e funcional
+
+## 🚤 Requisitos Técnicos
+
+**Backend:** Flask (framework Python)
+**Frontend:** HTML com Tailwind CSS (via CDN)
+**Armazenamento:** Arquivos CSV (projetos.csv e tarefas.csv)
+**Rotas:** Organizadas de forma simples e funcional
 
 🚗 Estrutura do Projeto
 gerenciador_projetos/
