@@ -32,6 +32,7 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com **Flask**. 
 **Rotas:** Organizadas de forma simples e funcional
 
 ## 🚗 Estrutura do Projeto
+
 gerenciador_projetos/
 
 │
@@ -90,12 +91,14 @@ Abra o navegador e acesse http://127.0.0.1:5000/.
 **Listar e Gerenciar Projetos:**
 
 Acesse a página inicial (/) para ver todos os projetos em um layout de cartões.
+
 Clique em "Ver Projeto" para visualizar detalhes e tarefas ou em "Editar" para modificar nome e descrição.
 
 
 **Gerenciar Tarefas:**
 
 Na página de um projeto, clique em "Nova Tarefa" para adicionar uma tarefa com nome e status.
+
 Edite ou exclua tarefas usando os links "Editar" e "Excluir" ao lado de cada tarefa.
 
 
@@ -103,7 +106,10 @@ Edite ou exclua tarefas usando os links "Editar" e "Excluir" ao lado de cada tar
 **Observações**
 
 A interface utiliza um esquema de cores roxo e branco.
+
 Os arquivos CSV (projetos.csv e tarefas.csv) são criados automaticamente na primeira execução, se não existirem.
+
 Certifique-se de que o diretório do projeto tenha permissões de escrita para manipulação dos arquivos CSV.
+
 A funcionalidade de remover projetos não foi implementada no código fornecido.
 
