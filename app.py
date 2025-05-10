@@ -4,11 +4,9 @@ import os
 
 app = Flask(__name__)
 
-# Paths to CSV files
 PROJECTS_FILE = 'projetos.csv'
 TASKS_FILE = 'tarefas.csv'
 
-# Ensure CSV files exist
 if not os.path.exists(PROJECTS_FILE):
     with open(PROJECTS_FILE, 'w', newline='') as f:
         writer = csv.writer(f)
@@ -19,7 +17,6 @@ if not os.path.exists(TASKS_FILE):
         writer = csv.writer(f)
         writer.writerow(['id', 'projeto_id', 'nome', 'status'])
 
-# Helper functions to read/write CSV
 def read_projects():
     projects = []
     with open(PROJECTS_FILE, 'r') as f:
@@ -50,7 +47,7 @@ def write_task(task):
         task_id = len(tasks) + 1
         writer.writerow([task_id, task['projeto_id'], task['nome'], task['status']])
 
-# Routes
+
 @app.route('/')
 def index():
     projects = read_projects()
@@ -60,7 +57,11 @@ def index():
 def projeto(projeto_id):
     projects = read_projects()
     tasks = [task for task in read_tasks() if int(task['projeto_id']) == projeto_id]
-    project = next((p for p in projects if int(p['id']) == projeto_id), None)
+    project = None
+    for p in projects:
+        if int(p['id']) == projeto_id:
+            project = p
+            break
     return render_template('projeto.html', project=project, tasks=tasks)
 
 @app.route('/nova_tarefa/<int:projeto_id>', methods=['GET', 'POST'])
@@ -78,7 +79,11 @@ def nova_tarefa(projeto_id):
 @app.route('/editar_projeto/<int:projeto_id>', methods=['GET', 'POST'])
 def editar_projeto(projeto_id):
     projects = read_projects()
-    project = next((p for p in projects if int(p['id']) == projeto_id), None)
+    project = None
+    for p in projects:
+        if int(p['id']) == projeto_id:
+            project = p
+            break
     if request.method == 'POST':
         projects = [p for p in projects if int(p['id']) != projeto_id]
         projects.append({
@@ -97,7 +102,11 @@ def editar_projeto(projeto_id):
 @app.route('/editar_tarefa/<int:tarefa_id>', methods=['GET', 'POST'])
 def editar_tarefa(tarefa_id):
     tasks = read_tasks()
-    task = next((t for t in tasks if int(t['id']) == tarefa_id), None)
+    task = None
+    for t in tasks:
+        if int(t['id']) == tarefa_id:
+            task = t
+            break
     if request.method == 'POST':
         tasks = [t for t in tasks if int(t['id']) != tarefa_id]
         tasks.append({
@@ -114,11 +123,14 @@ def editar_tarefa(tarefa_id):
         return redirect(url_for('projeto', projeto_id=task['projeto_id']))
     return render_template('editar_tarefa.html', task=task)
 
-# Nova rota para excluir tarefa
 @app.route('/excluir_tarefa/<int:tarefa_id>', methods=['POST'])
 def excluir_tarefa(tarefa_id):
     tasks = read_tasks()
-    task = next((t for t in tasks if int(t['id']) == tarefa_id), None)
+    task = None
+    for t in tasks:
+        if int(t['id']) == tarefa_id:
+            task = t
+            break
     if task:
         tasks = [t for t in tasks if int(t['id']) != tarefa_id]
         with open(TASKS_FILE, 'w', newline='') as f:
