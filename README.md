@@ -65,25 +65,27 @@ gerenciador_projetos/
 Clonar o Repositório (se aplicável):
 
 git clone <URL_DO_REPOSITORIO>
+
 cd gerenciador_projetos
 
 Alternativamente, copie os arquivos para um diretório local.
 
 Criar e Ativar um Ambiente Virtual (opcional, mas recomendado):
+
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+
+venv\Scripts\activate     
 
 
-Instalar Dependências:
+**Instalar Dependências:**
 pip install flask
 
 
-Executar o Projeto:
+**Executar o Projeto:**
 python app.py
 
 
-Acessar o Sistema:
+**Acessar o Sistema:**
 Abra o navegador e acesse http://127.0.0.1:5000/.
 
 
