@@ -62,7 +62,7 @@ gerenciador_projetos/
 
 ## 🚅 Instruções de Instalação e Execução
 
-Clonar o Repositório (se aplicável):
+1-**Clonar o Repositório** (se aplicável):
 
 ```
 git clone <URL_DO_REPOSITORIO>
@@ -72,11 +72,11 @@ cd gerenciador_projetos
 
 Alternativamente, copie os arquivos para um diretório local.
 
-Criar e Ativar um Ambiente Virtual (opcional, mas recomendado):
+2-**Criar e Ativar um Ambiente Virtual** (opcional, mas recomendado):
 
-python -m venv venv
+```python -m venv venv
 
-venv\Scripts\activate     
+venv\Scripts\activate ```    
 
 
 **Instalar Dependências:**
