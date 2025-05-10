@@ -2,7 +2,7 @@
 
 **Descrição Do Projeto:**
 
-Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que os usuários criem, editem e visualizem projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, excluídas e categorizadas por status (Pendente, Em Andamento, Concluído). Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind CSS para uma interface moderna, responsiva e amigável.
+Este é um sistema web de gerenciamento de projetos desenvolvido com **Flask**. Ele permite que os usuários criem, editem e visualizem projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, excluídas e categorizadas por status (**Pendente, Em Andamento, Concluído**). Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind CSS para uma interface moderna, responsiva e amigável.
 
 ## 🛴 Funcionalidades Implementadas
 
@@ -51,8 +51,8 @@ Nota: A pasta static/ não é utilizada, pois o Tailwind CSS é carregado via CD
 ## 🚅 Instruções de Instalação e Execução
 
 Clonar o Repositório (se aplicável):
-git clone <URL_DO_REPOSITORIO>
-cd gerenciador_projetos
+'''git clone <URL_DO_REPOSITORIO>
+cd gerenciador_projetos'''
 
 Alternativamente, copie os arquivos para um diretório local.
 
