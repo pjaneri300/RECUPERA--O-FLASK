@@ -33,6 +33,7 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com **Flask**. 
 
 ## 🚗 Estrutura do Projeto
 
+```
 gerenciador_projetos/
 
 │
@@ -57,6 +58,7 @@ gerenciador_projetos/
 ├── app.py                  # Código principal do Flask
 
 └── README.md               # Documentação do projeto
+```
 
 
 
