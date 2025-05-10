@@ -1,6 +1,6 @@
 ## ✈ Gerenciador de Projetos
 
-__ Descrição do Projeto 
+**Descrição do projeto**
 Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele permite que os usuários criem, editem e visualizem projetos, além de gerenciar tarefas associadas a cada projeto. As tarefas podem ser adicionadas, editadas, excluídas e categorizadas por status (Pendente, Em Andamento, Concluído). Os dados são armazenados em arquivos CSV (projetos.csv e tarefas.csv), e o frontend utiliza HTML com Tailwind CSS para uma interface moderna, responsiva e amigável.
 🛴 Funcionalidades Implementadas
 
