@@ -64,9 +64,11 @@ gerenciador_projetos/
 
 Clonar o Repositório (se aplicável):
 
+```
 git clone <URL_DO_REPOSITORIO>
 
 cd gerenciador_projetos
+```
 
 Alternativamente, copie os arquivos para um diretório local.
 
