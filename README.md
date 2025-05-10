@@ -74,9 +74,11 @@ Alternativamente, copie os arquivos para um diretório local.
 
 2-**Criar e Ativar um Ambiente Virtual** (opcional, mas recomendado):
 
-```python -m venv venv
+```
+python -m venv venv
 
-venv\Scripts\activate ```    
+venv\Scripts\activate
+```    
 
 
 **Instalar Dependências:**
