@@ -7,22 +7,31 @@ Este é um sistema web de gerenciamento de projetos desenvolvido com Flask. Ele 
 ## 🛴 Funcionalidades Implementadas
 
 **Cadastrar Projetos:** Crie projetos com nome e descrição.
+
 **Listar Projetos:** Visualize todos os projetos em uma interface de cartões.
+
 **Editar Projetos:** Modifique nome e descrição de projetos existentes.
+
 **Adicionar Tarefas aos Projetos:** Adicione tarefas com nome e status.
+
 **Editar e Remover Tarefas:** Atualize ou exclua tarefas de um projeto.
+
 **Visualizar Tarefas de um Projeto:** Veja todas as tarefas associadas a um projeto específico.
+
 **Armazenamento:** Utiliza arquivos CSV para persistência de dados.
 
 
 ## 🚤 Requisitos Técnicos
 
 **Backend:** Flask (framework Python)
+
 **Frontend:** HTML com Tailwind CSS (via CDN)
+
 **Armazenamento:** Arquivos CSV (projetos.csv e tarefas.csv)
+
 **Rotas:** Organizadas de forma simples e funcional
 
-🚗 Estrutura do Projeto
+## 🚗 Estrutura do Projeto
 gerenciador_projetos/
 │
 ├── templates/              # Templates HTML
@@ -38,7 +47,8 @@ gerenciador_projetos/
 └── README.md               # Documentação do projeto
 
 Nota: A pasta static/ não é utilizada, pois o Tailwind CSS é carregado via CDN.
-🚅 Instruções de Instalação e Execução
+
+## 🚅 Instruções de Instalação e Execução
 
 Clonar o Repositório (se aplicável):
 git clone <URL_DO_REPOSITORIO>
